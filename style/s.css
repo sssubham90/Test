@@ -1,0 +1,38 @@
+*{
+    background-color: dimgrey;
+}
+p{
+    color: azure;
+    font-style: italic;
+}
+.h{
+    color: darkcyan;
+    background-color: aquamarine;
+}
+.hh{
+    color: cadetblue;
+    text-align: center;
+    background-color: aqua;
+}
+#i{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: fantasy;
+}
+#j{
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 150%;
+    font-family: cursive;
+    padding-left: 3.6%;
+    padding: 0% 2% 1% 4%;
+    box-shadow: 0 8px 8px 0;
+    color: aqua;
+}
+.b{
+    padding: 0.1% 2% 0.6% 2%;
+    box-shadow: 0 8px 8px 0;
+    color: aqua;
+}
+/*Vineet Kumar Gupta. Roll no.-1705094. CS-2*/

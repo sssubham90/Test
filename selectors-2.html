@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .a { 
+            width: 300px;
+            height: 50px;
+            padding: 10px;
+            margin-left: 10px;
+            background-color: skyblue;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+        k {
+            font-family: sans-serif;
+            color: aliceblue;
+        }
+        p {  
+        	border-radius: 25px;
+            color: BLACK;
+            font-size: 25px;
+            margin-left: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: silver;
+        }
+        
+        .indented {
+            padding-left: 50pt;
+            padding-right: 50pt;
+            padding-top: 20pt;
+            padding-bottom: 20pt;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+
+<body class="indented">
+
+    <b class="a">CHILD SELECTORS:-</b>
+
+    <p>
+        A child selector matches when an element is the child of some element. A child selector is made up of two or more selectors separated by ">".<br>
+        The following rule sets the style of all P elements that are children of BODY:<br/><br/>
+        <k>body > P<br>{ line-height: 1.3 }</k><br/><br/>
+        The following example combines descendant selectors and child selectors:<br/><br/>
+
+        <k>div ol>li P</k><br/><br/>
+        It matches a P element that is a descendant of an LI; the LI element must be the child of an OL element; the OL element must be a descendant of a DIV. Notice that the optional white space around the ">" combinator has been left out.
+    </p>
+    
+    <hr/>
+    <br/>
+    <b class="a">DESCENDENT SELECTORS:-</b>
+    <p>
+        At times, authors may want selectors to match an element that is the descendant of another element in the document tree (e.g., "Match those EM elements that are contained by an H1 element"). Descendant selectors express such a relationship in a pattern. A descendant selector is made up of two or more selectors separated by white space. A descendant selector of the form "A B" matches when an element B is an arbitrary descendant of some ancestor element A.<br>
+        For example, consider the following rules:<br><br>
+        <k>h1 { color: red }<br/>
+            em { color: red }</k>
+    </p>
+    <hr/>
+    <br/>
+    <b class="a">ADJACENT SIBLING SELECTORS:-</b>
+    <p>
+        Adjacent sibling selectors have the following syntax: E1 + E2, where E2 is the subject of the selector. The selector matches if E1 and E2 share the same parent in the document tree and E1 immediately precedes E2, ignoring non-element nodes (such as text nodes and comments).<br>
+        Thus, the following rule states that when a P element immediately follows a MATH element, it should not be indented:<br><br>
+        <k>math + p <br>{ text-indent: 0 }</k><br>
+        The next example reduces the vertical space separating an H1 and an H2 that immediately follows it:<br><br>
+        <k>h1 + h2<br> { margin-top: -5mm }</k><br><br>
+        The following rule is similar to the one in the previous example, except that it adds a class selector. Thus, special formatting only occurs when H1 has class="opener":<br><br>
+        <k>h1.opener + h2<br> { margin-top: -5mm }</k>
+    </p>
+    <hr/>
+    <br>
+    <b class="a">ATTRIBUTE SELECTORS:-</b>
+    <p>
+        Attribute selectors enable you to use the attributes that an element carries in the selector. You can use
+        attribute selectors in several ways, as shown in the following table, but they have only been supported
+        in later browser versions.<br><br>
+        <img src="img/Capture1.PNG" width="100%" height="700" alt="image"><br/><br/>
+        Let us have a look at using these attribute selectors. Here are seven different paragraph elements, each
+        carrying different attributes/attribute values :<br><br>
+        <img src="img/Capture2.PNG" width="100%" height="200" alt="image"><br/><br/>
+        Now let us look at a CSS style sheet that uses attribute selectors to associate different style rules with each
+        of these elements:<br><br>
+        <img src="img/Capture3.PNG" width="100%" height="150" alt="image"><br/>
+    </p>
+ </body>
+</html>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		a.hover {
+  			background-color: powderblue;
+  			transition: background-color .5s;
+		  }
+
+		a.hover:hover {
+  			background-color: gold;
+			}
+	</style>
+</head>
+<body>
+	<h1>The <u>:hover</u> Pseudo-class</h1>
+	<p>
+		Hover is one of the many pseudo-classes. For example you can change, you can control the styling of an element
+	        when the mouse hovers over it, when it is clicked and when it was previously clicked.The :hover CSS pseudo-class
+	        matches when the user interacts with an element with a pointing device, but does not necessarily activate it.
+	        It is generally triggered when the user hovers over an element with the cursor (mouse pointer).
+	</p>
+	<br>
+	<p>
+		Styles defined by the :active pseudo-class will be overridden by any subsequent link-related pseudo-class
+	        (:link, :visited, or :active) that has at least equal specificity. To style links appropriately, put the 
+		:hover rule after the :link and :visited rules but before the :active one, as defined by the LVHA-order:
+	        :link   :visited   :hover   :active.
+	</p>
+	<h3>Basic Example:</h3>
+	<p>
+		<b>HTML</b>
+		<a class="hover" href="#">Try hovering over this link.</a>
+		<b>CSS</b>
+		a {
+  			background-color: powderblue;
+  			transition: background-color .5s;
+		  }
+
+		a:hover {
+  			background-color: gold;
+			}
+	</p>
+	<br>
+	<br>
+	<h1>The <u>:visited</u> Pseudo-class</h1>
+	<p>
+		The :visited CSS pseudo-class represents links that the user has already visited. For privacy reasons,
+	        the styles that can be modified using this selector are very limited.Styles defined by the :visited 
+		pseudo-class will be overridden by any subsequent link-related pseudo-class (:link, :hover, or :active)
+	        that has at least equal specificity. To style links appropriately, put the :visited rule after the :link
+	        rule but before the :hover and :active rules, as defined by the LVHA-order: :link   :visited   :hover   
+		:active.
+	</p>
+	<h3>Basic Example:</h3>
+	<p>
+		Properties that would otherwise have no color or be transparent cannot be modified with :visited. Of the 
+		properties that can be set with this pseudo-class, your browser probably has a default value for color and
+	        column-rule-color only. Thus, if you want to modify the other properties, you'll need to give them a base
+	        value outside the :visited selector.
+
+		<b>HTML</b>
+			<a href="#test-visited-link">Have you visited this link yet?</a><br>
+			<a href="">You've already visited this link.</a>
+		<b>CSS</b>
+			a {
+  				/* Specify non-transparent defaults to certain properties,
+     				allowing them to be styled with the :visited state */
+  				background-color: white;
+  				border: 1px solid white;
+			  }
+
+			a:visited {
+  				background-color: yellow;
+  				border-color: hotpink;
+  				color: hotpink;
+				  }
+	</p>
+</body>
+</html>

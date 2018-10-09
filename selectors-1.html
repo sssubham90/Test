@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Univeral/type/class/id selectors...
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/s.css">
+</head>
+
+<body>
+    <div class="b">
+        <h1 id="i" class="hh">------------Selectors:-----------</h1>
+    </div>
+	<div class="b">
+            <h2 class="h">Universal Selectors:</h2>
+            <p>The <a id="i">universal selector</a> is an asterisk; it is like a wildcard and matches all element types in the document.</p>
+            <p>For example- This web page is styled using universal selector, which means if any other selector is not applicable then universal selector is used for it. Here, say background color.</p>
+            <p>*{ background-color: dimgrey; }</p>
+    </div>
+    <br/>
+    <div class="b">
+            <h2 class="h">Type Selectors:</h2>
+            <p>The <a id="i">type selector</a> matches all the elements specified in the comma-delimited list. It allows to apply the same rules to several elements.</p>
+            <p>For example- All the paragraphs in this web page are styled under the type selector.</p>
+            <p>p{ color: azure; font-style: italic; }</p>
+    </div>
+    <br/>
+    <div class="b">
+            <h2 class="h">Class Selectors:</h2>
+            <p>The <a id="i">class selector</a> allows to make a rule with an element carrying a class attribute whose value is specified in the class selector.</p>
+            <p>For example- All the h2 headers in this web page are styled using class selectors.</p>
+            <p>In the source code of this web page:<br>&lt;h2 class="h">Class Selectors:&lt;/h2&gt;<br>&lt;h1 id="i" class="hh">------------Selectors:-----------&gt;/h1></p>
+            <p>In css file:<br>.h{ color: darkcyan; background-color: aquamarine; }
+                <br/>.hh{ color: cadetblue; text-align: center; background-color: lime; }<br>.b{ padding: 0.1% 2% 0.6% 2%; box-shadow: 0 8px 8px 0;color: aqua; }</p>
+    </div>
+    <br/>
+    <div class="b">
+            <h2 class="h">Id Selectors:</h2>
+            <p>The <a id="i">id selector</a> works just lik a class selector, but works on the value of id attributes. It uses a # sign before an id attribute.</p>
+            <p>For example- The h1 header and all the bold and underlined texts in this web page are styled using id selector.</p>
+            <p>In the source code of this web page:<br>&lt;a id="i">id selector&lt;/a><br>&lt;a id="i">class selector&lt;/a><br>&lt;a id="i">universal selector&lt;/a><br>&lt;a id="i">type selector&lt;/a><br>&lt;h1 id="i" class="hh">------------Selectors:-----------&gt;/h1><br>&lt;b id="j">Vineet Kumar Gupta&lt;br>Roll no.- 1705094&lt;br>CS-2&lt;/b></p>
+		    <p>In css file:<br>#i{ text-decoration: underline; font-weight: bold; font-family: fantasy; }<br> #j{ text-decoration: underline; font-weight: bold; font-style: italic; font-size: 150%; font-family: cursive;padding-left: 3.6%; padding: 0% 2% 1% 4%; box-shadow: 0 8px 8px 0;color: aqua; }</p>
+    </div>
+    </body>
+</html>

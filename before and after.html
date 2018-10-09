@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+.before::before {
+    content: url(img/image.jpg);
+}
+.after::after {
+    content: url(img/image.jpg);
+}
+</style>
+<link href="style/sheet.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1 style="text-align:center">The ::before and ::after Pseudo-elements</h1>
+<div class="before"><h2> The ::before Pseudo-element</h2></div>
+	<p>The <span class= "one">::before</span> pseudo-element can be used to insert some content before the content of an element.<br/>The following example inserts an image before the content of each h1 element:</p>
+<fieldset>
+	<legend>Example</legend>
+	h1::before {
+    content: url(img/image.gif);
+	}
+</fieldset><br/>
+<div class="after"><h2> The ::after Pseudo-element</h2></div>
+	<p>The <span class= "one">::after</span> pseudo-element can be used to insert some content after the content of an element.<br>The following example inserts an image after the content of each h1 element:</p>
+<fieldset>
+	<legend>Example</legend>
+	h1::after {
+    content: url(img/image.gif);
+	}
+</fieldset>
+<br/>
+<a href="css pseudo classes.html">Back to CSS Pseudo Classes</a>
+</body>
+</html>
